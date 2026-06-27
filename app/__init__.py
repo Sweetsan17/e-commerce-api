@@ -28,8 +28,6 @@ def create_app():
                 "message": "Student Management API",
                 "version": "1.0",
                 "endpoints": {
-                    "students": "/api/students",
-                    "courses": "/api/courses",
                     "auth": {
                         "register": "/api/auth/register",
                         "login": "/api/auth/login",
