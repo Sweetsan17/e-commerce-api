@@ -8,7 +8,7 @@ class Customer(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
     full_name = db.Column(db.String(120), nullable=False)
     phone = db.Column(db.String(20), nullable=True)
-    address = db.Column(db.text(255), nullable=True)
+    address = db.Column(db.Text(255), nullable=True)
 
     def to_dict(self):
         """Return a dictionary representation of the customer."""
